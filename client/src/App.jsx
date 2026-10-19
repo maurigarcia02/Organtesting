@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/events"); // Replace with your API URL
+        const response = await fetch("http://localhost:5001/api/events"); // Replace with your API URL
         const data = await response.json();
         setEvents(data); // Update state with fetched events
       } catch (error) {
